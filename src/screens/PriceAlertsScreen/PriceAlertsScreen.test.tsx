@@ -1,8 +1,8 @@
-import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react-native';
-import { router } from 'expo-router';
-import { PriceAlertsScreen } from './PriceAlertsScreen';
 import { AlertContext, type PriceAlert } from '@context/AlertProvider/useAlertProvider';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react-native';
+import { router } from 'expo-router';
+import React from 'react';
+import { PriceAlertsScreen } from './PriceAlertsScreen';
 
 jest.mock('expo-router', () => ({
   router: {
